@@ -1,0 +1,134 @@
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/background-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e6005a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes {
+    padding: 22px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #070d12;
+}
+
+.cartao .minhas-informacoes img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2de2c5;
+    display: block;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 18px;
+    color: #b8b8b8;
+    font-weight: 400;
+}
+
+.cartao .conteudo {
+    margin-top: 16px;
+}
+
+.cartao .aba {
+    display: flex;
+}
+
+.cartao .aba .abas {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    background-color: #070d12;
+}
+
+.cartao .aba .abas.selecionado {
+    background-color: #262626;
+}
+
+.abas img {
+    width: 28px;
+    height: 28px;
+}
+
+.cartao .informacoes-abas {
+    background-color: #262626;
+}
+
+.informacoes-abas .informacoes {
+    display: none;
+    min-height: 260px;
+    padding: 18px;
+}
+
+.informacoes-abas .informacoes.selecionado {
+    display: block;
+}
+
+.informacoes-abas h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.informacoes-abas p {
+    font-size: 20px;
+    line-height: 1.2;
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+.informacoes-abas span {
+    color: #e6005a;
+}
+
+.informacoes-abas ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.informacoes-abas li a {
+    width: 250px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #e6005a;
+}
