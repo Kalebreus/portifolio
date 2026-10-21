@@ -3,69 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101613">
+    <meta name="description" content="Portfólio de Jônatas José, desenvolvedor Full Stack Júnior com foco em JavaScript, TypeScript, React e Node.js.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>miniportfolio</title>
+    <title>Jônatas José | Desenvolvedor Full Stack</title>
 </head>
 <body>
-    <main class="cartao">
-        <div class="minhas-informacoes">
-            <img src="./src/img/Design-sem-nome.png" alt="minha foto">
-            <h1 class="nome">jônatas jose</h1>
-            <h2 class="cargo">desenvolvedor full stack jr</h2>
-        </div>
-        <div class="conteudo">
-            <ul class="aba">
-                <li class="abas" data-aba="sobre">
-                    <img src="./src/img/sobre.gif" alt="icone sobre mim">
-                </li>
-                <li class="abas" data-aba="redes">
-                    <img src="./src/img/coracao.gif" alt="redes sociais">
-                </li>
-            </ul>
-            <div class="informacoes-abas">
-                <div class="informacoes" id="sobre">
-                    <h3>sobre</h3>
-                    <div>
-                        <p>oi! meu nome é jônatas jose, seja bem vindo</p>
-                        <p>
-                            Desenvolvedor Full Stack Júnior
-                            Tenho experiência prática no desenvolvimento de aplicações web,
-                            construindo conhecimentos tanto em <span>Front-end</span> quanto em
-                            Back-end, com foco principal no ecossistema JavaScript, TypeScript,
-                            React, Node.js, além de conhecimentos em Java, bancos de dados
-                            relacionais, APIs REST, testes automatizados e controle de versão.
-                            Minha trajetória em programação foi construída através de estudos
-                            técnicos, projetos pessoais, exercícios práticos, desenvolvimento
-                            de interfaces e criação de aplicações que simulam situações reais
-                            encontradas no mercado de desenvolvimento de software.
-                            Front-end
-                            No Front-end, possuo experiência com HTML5, CSS3, JavaScript,
-                            TypeScript e React, trabalhando desde a estrutura de páginas até
-                            a construção de interfaces mais dinâmicas e componentizadas.
-                        </p>
-                    </div>
+    <header class="site-header">
+        <a class="wordmark" href="#inicio" aria-label="Jônatas José, início">JJ<span>.</span></a>
+        <nav class="navigation" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero page-width" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Desenvolvedor Full Stack Júnior</p>
+                <h1 id="hero-title">Olá, eu sou<br>Jônatas <span>José.</span></h1>
+                <p class="hero-lede">Transformo ideias em experiências digitais simples, funcionais e bem construídas.</p>
+                <p class="hero-description">Desenvolvedor em formação contínua, com prática em aplicações web e interesse em criar soluções que façam a diferença no dia a dia.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="https://www.linkedin.com/in/dev-jonatas-jos%C3%A9-dos-santos-593b95398/" target="_blank" rel="noopener noreferrer">Entre em contato <span aria-hidden="true">↗</span></a>
+                    <a class="button button-quiet" href="https://drive.google.com/file/d/19SwOhODd0klrQ3hnztDNCu-46BNVcasp/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver currículo <span aria-hidden="true">↗</span></a>
                 </div>
-                <div class="informacoes" id="redes">
-                    <h3>minhas redes</h3>
-                    <ul>
-                        <li>
-                            <a href="https://drive.google.com/file/d/19SwOhODd0klrQ3hnztDNCu-46BNVcasp/view?usp=sharing" target="_blank">curriculo</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/dev-jonatas-jos%C3%A9-dos-santos-593b95398/" target="_blank">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Kalebreus" target="_blank">GitHub</a>
-                        </li>
-                    </ul>
+                <div class="social-links" aria-label="Redes sociais">
+                    <a href="https://github.com/Kalebreus" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <span aria-hidden="true" class="social-divider">/</span>
+                    <a href="https://www.linkedin.com/in/dev-jonatas-jos%C3%A9-dos-santos-593b95398/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-        </div>
+
+            <div class="hero-art" aria-label="Retrato ilustrado de Jônatas">
+                <div class="portrait-frame">
+                    <img src="./src/img/Design-sem-nome.png" alt="Ilustração de Jônatas em estilo editorial" fetchpriority="high">
+                </div>
+                <div class="art-caption"><span>01</span> APRENDER · CONSTRUIR · EVOLUIR</div>
+                <div class="art-orbit" aria-hidden="true"></div>
+            </div>
+            <a class="scroll-cue" href="#sobre"><span aria-hidden="true">↓</span> Role para conhecer</a>
+        </section>
+
+        <section class="about section-shell" id="sobre" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="section-index">01 / SOBRE</p>
+                <h2 id="about-title">Código com propósito.<br><span>Curiosidade sem limite.</span></h2>
+            </div>
+            <div class="about-content">
+                <p>Sou desenvolvedor Full Stack Júnior e gosto de entender como cada parte de um produto se conecta — da interface ao servidor. Venho construindo minha experiência com projetos pessoais, estudos técnicos e muita prática.</p>
+                <p>Meu foco está no ecossistema JavaScript e TypeScript, com React no front-end e Node.js no back-end. Também estudo Java, bancos de dados relacionais, APIs REST e testes automatizados.</p>
+                <p>Busco evoluir a cada projeto, escrever código claro e colaborar na criação de soluções úteis e acessíveis.</p>
+            </div>
+        </section>
+
+        <section class="tech section-shell" id="tecnologias" aria-labelledby="tech-title">
+            <div class="section-heading compact-heading">
+                <p class="section-index">02 / FERRAMENTAS</p>
+                <h2 id="tech-title">Tecnologias que <span>exploro.</span></h2>
+            </div>
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <span class="tech-number">01</span>
+                    <h3>Front-end</h3>
+                    <p>Interfaces responsivas, acessíveis e componentizadas.</p>
+                    <ul class="tag-list" aria-label="Tecnologias de front-end">
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React</li>
+                    </ul>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-number">02</span>
+                    <h3>Back-end</h3>
+                    <p>Serviços e integrações para aplicações web.</p>
+                    <ul class="tag-list" aria-label="Tecnologias de back-end">
+                        <li>Node.js</li><li>Java</li><li>APIs REST</li><li>SQL</li>
+                    </ul>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-number">03</span>
+                    <h3>Boas práticas</h3>
+                    <p>Qualidade e organização ao longo do desenvolvimento.</p>
+                    <ul class="tag-list" aria-label="Práticas de desenvolvimento">
+                        <li>Testes</li><li>Git</li><li>Versionamento</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section-shell" id="contato" aria-labelledby="contact-title">
+            <p class="section-index">03 / CONTATO</p>
+            <div class="contact-row">
+                <div>
+                    <h2 id="contact-title">Vamos construir<br><span>algo legal juntos?</span></h2>
+                    <p>Estou aberto a conversas, oportunidades e novos desafios.</p>
+                </div>
+                <a class="contact-link" href="https://www.linkedin.com/in/dev-jonatas-jos%C3%A9-dos-santos-593b95398/" target="_blank" rel="noopener noreferrer" aria-label="Fale comigo pelo LinkedIn">Fale comigo <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
     </main>
-    <script src="./src/js/index.js"></script>
+
+    <footer class="site-footer page-width">
+        <span>© 2026 Jônatas José</span>
+        <span>Feito com cuidado e curiosidade.</span>
+        <a href="#inicio">Voltar ao início ↑</a>
+    </footer>
 </body>
 </html>
